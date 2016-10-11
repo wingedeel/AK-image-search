@@ -1,14 +1,10 @@
 #### To Install #####
-	> cd AKReduxSimpleStarter
-	> npm start
+	> cd AK-image-search
+	> npm install
 ```
 
 #### To Run this program #####
-	> cd AKReduxSimpleStarter
+	> cd AK-image-search
 	> npm start
 
-- Goes to package.json.  Runs the 'start' script which calls webpack
-- Webpack compiles the code into bundle.js and runs index.html on the server.
-
-```
 
