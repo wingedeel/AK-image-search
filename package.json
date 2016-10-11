@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple Pixabay image search using React and Redux",
   "main": "index.js",
-  "repository": "",
+  "repository": "https://github.com/wingedeel/AK-image-search.git",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "postinstall": "webpack -p",
@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^0.14.0",
     "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.14.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
