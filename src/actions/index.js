@@ -16,7 +16,8 @@ export function setSearchTerm(searchTerm) {
 
 
 
-
+/*
+*/
 export function fetchSearchResults(searchTerm) {
 
 	// e.g. https://pixabay.com/api/?key=3447327-4862a38728b3e10a8a5e52323&q=yellow+flowers&image_type=photo
@@ -37,7 +38,6 @@ export function fetchSearchResults(searchTerm) {
 
 
 export function selectListItem(listItem) {
-	console.log('list item selected');
 	return {
 		type: 'ITEM_SELECTED',
 		payload: listItem

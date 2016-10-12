@@ -1,43 +1,41 @@
-/*
- /*
- * GalleryItem styles
- * ========================================================================== */
+body {
+    background-color: #E6DDB8;
+}
 
+.searchBar {
+  padding: 20px;
+}
 
  .btn {
-   border: 2px solid $grey;
+   border: 2px solid #BAB393;
    border-radius: 20px;
    padding: 3px 20px;
  }
  
  .btn-primary {
   
-  font: normal 13px sans-serif; /*TEST*/
-  /* border:1px solid black;*/ /*TEST*/
+  font: normal 13px sans-serif; 
+  /* border:1px solid black;*/ 
    background-color: white;
-   color: $grey-dark;
-   &:hover, &:focus, &:active, &.liked {
-     background-color: $red;
-     border-color: $red;
-     color: white;
-   }
-   
+   color: #BAB393;
  }
 
   .imageID {
-    font: normal 13px sans-serif; /*TEST*/
-    padding: 3px 0px 3px 0px; /*TEST*/
+    font: normal 13px sans-serif; /
+    padding: 3px 0px 3px 0px; 
    }
 
    .tags {
-    font: normal 13px sans-serif; /*TEST*/
-    padding: 3px 0px 15px 0px; /*TEST*/
+    font: normal 13px sans-serif; 
+    padding: 3px 0px 15px 0px; 
    }
  
  .thumbnail {
    border-radius: 8px;
    padding: 12.5px;
-  /* border:1px solid black; *//*TEST*/
+   border:1px solid #BAB393; 
+   background-color: white;
+   margin-bottom: 20px;
  
  
    .image-preview {
@@ -49,33 +47,14 @@
         height: 100%;
         display: inline-block;
       }
-      /*
-      .overlay {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background-color: black;
-         opacity: 0.7;
-         cursor: pointer;
-      }
-      .glyphicon-zoom-in {
-        font-size: 40px;
-        color: white;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-      */
     }
+
    .caption {
      padding: 0;
      text-transform: uppercase;
 
      h6 {
-       color: $grey-light;
+       color: #BAB393;
      }
 
    }
