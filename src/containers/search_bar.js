@@ -6,14 +6,12 @@ import { setSearchTerm, fetchSearchResults } from '../actions/index';
 
 
 class SearchBar extends Component {
-	
-	// Called just before this component is rendered
-	componentWillMount() {
-		this.onInputChange = this.onInputChange.bind(this);
+	constructor(props){
+		super(props)
+    	this.onInputChange = this.onInputChange.bind(this);
 		this.onFormSubmit = this.onFormSubmit.bind(this);
 	}
 	
-
 	onFormSubmit(event){
 		// Stop the click from going anywhere
 		event.preventDefault();

@@ -10,4 +10,4 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port);
-console.log('Server started');
+console.info("==> Listening on port %s. Open up http://localhost:%s/ in your browser.", port, port)

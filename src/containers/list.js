@@ -1,9 +1,6 @@
-
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { selectListItem } from '../actions/index';
-
 
 class List extends Component {
 
