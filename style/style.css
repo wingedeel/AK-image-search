@@ -6,59 +6,34 @@ body {
   padding: 20px;
 }
 
- .btn {
+.btnViewImage {
    border: 2px solid #BAB393;
    border-radius: 20px;
    padding: 3px 20px;
- }
- 
- .btn-primary {
-  
-  font: normal 13px sans-serif; 
-  /* border:1px solid black;*/ 
+   font: normal 13px sans-serif; 
    background-color: white;
    color: #BAB393;
  }
-
-  .imageID {
-    font: normal 13px sans-serif; /
-    padding: 3px 0px 3px 0px; 
-   }
-
-   .tags {
-    font: normal 13px sans-serif; 
-    padding: 3px 0px 15px 0px; 
-   }
  
- .thumbnail {
-   border-radius: 8px;
-   padding: 12.5px;
-   border:1px solid #BAB393; 
-   background-color: white;
-   margin-bottom: 20px;
- 
- 
-   .image-preview {
-      display: inline-block;
-      position: relative;
-      margin: 0 auto;
-      img {
-        width: 100%;
-        height: 100%;
-        display: inline-block;
-      }
-    }
-
-   .caption {
-     padding: 0;
-     text-transform: uppercase;
-
-     h6 {
-       color: #BAB393;
-     }
-
-   }
-
-
+ .resultImage {
+   width: 100%;
  }
+
+.resultImageID {
+  font: normal 13px sans-serif; 
+  padding: 3px 0px 3px 0px; 
+}
+
+.resultImageTags {
+  font: normal 13px sans-serif; 
+  padding: 3px 0px 15px 0px; 
+}
  
+.resultImageBg {
+  border-radius: 8px;
+  padding: 12.5px;
+  border:1px solid #BAB393; 
+  background-color: white;
+  margin-bottom: 20px;
+  text-align: center;
+} 

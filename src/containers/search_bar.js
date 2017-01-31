@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
 import { setSearchTerm, fetchSearchResults } from '../actions/index';
 
 
 class SearchBar extends Component {
+
 	constructor(props){
 		super(props)
     	this.onInputChange = this.onInputChange.bind(this);
@@ -55,5 +55,6 @@ function mapStateToProps( state ) {
 }
 
 
-
+// connect() will automatically bind dispatch to your actions 
+// if they are passed in as an object of function names.
 export default connect (mapStateToProps, {fetchSearchResults, setSearchTerm} )(SearchBar);

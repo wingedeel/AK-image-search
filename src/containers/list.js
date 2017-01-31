@@ -1,6 +1,9 @@
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import { selectListItem } from '../actions/index';
+
 
 class List extends Component {
 
@@ -13,37 +16,24 @@ class List extends Component {
 			
 				<div key={item.id} className="col-xs-6 col-sm-4">
 
-		        <div className="thumbnail">
-
-		          <div className="image-preview">
-		            <a className="gallery" title={item.id}>
-		              <img className="img-rounded" src={item.webformatURL} alt={item.id} width={this.getImageWidth()} height={this.getImageHeight()}/>
-		            </a>
-		          </div>
-
-		  
-		          <div className="caption text-center">
-		            <div className="imageID">ID:&nbsp;{item.id}</div>
-		            <div className="tags">Tags:&nbsp;{item.tags}</div>
-		            <div><a className={"btn btn-primary" } onClick={() => this.props.selectListItem(item)}>
+		        <div className="resultImageBg">
+		           <img 
+		            className="resultImage"
+		           	src={item.webformatURL} 
+		           	alt={item.id} 
+		           />
+		     
+		           <div className="resultImageID">ID:&nbsp;{item.id}</div>
+		           <div className="resultImageTags">Tags Here:&nbsp;{item.tags}</div>
+		           <a className="btnViewImage" onClick={() => this.props.selectListItem(item)}>
 		             View Image
-		            </a></div>
-		          </div>
-		          
+		           </a>
+		         
 		        </div>
 		      </div>
 			);
 
 		});
-	}
-
-
-	getImageWidth() {
-		return 300;
-	}
-
-	getImageHeight() {
-		return 200;
 	}
 
 	render() {
