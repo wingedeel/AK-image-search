@@ -28,7 +28,7 @@ class SearchBar extends Component {
 
 	render() {
 		return (
-			<div className="searchBar">
+			<div className="search-bar">
 			<h4>ak-image-search</h4>
 			<h6>A simple Image Search using React, Redux and Pixabay API</h6>
 			<form onSubmit={this.onFormSubmit} className="input-group">

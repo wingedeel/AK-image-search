@@ -14,23 +14,18 @@ class List extends Component {
 			
 			return (
 			
-				<div key={item.id} className="col-xs-6 col-sm-4">
-
-		        <div className="resultImageBg">
-		           <img 
-		            className="resultImage"
-		           	src={item.webformatURL} 
-		           	alt={item.id} 
-		           />
+		        <div key={item.id} className="result-card col-xs-6 col-sm-4">
+		           
+					<div className="result-card-text-item">ID:&nbsp;{item.id}</div>
+		           	<div className="result-card-text-item">Tags Here:&nbsp;{item.tags}</div>
+		          	
+		             <button className="btn-view-image" onClick={() => this.props.selectListItem(item)}>
+		             	View Image
+		             </button>
+		          
+		           	<img src={item.webformatURL} alt={item.id} />
 		     
-		           <div className="resultImageID">ID:&nbsp;{item.id}</div>
-		           <div className="resultImageTags">Tags Here:&nbsp;{item.tags}</div>
-		           <a className="btnViewImage" onClick={() => this.props.selectListItem(item)}>
-		             View Image
-		           </a>
-		         
 		        </div>
-		      </div>
 			);
 
 		});
@@ -38,7 +33,7 @@ class List extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="results">
 				{this.renderList()}
 			</div>
 		)

@@ -2,38 +2,45 @@ body {
     background-color: #E6DDB8;
 }
 
-.searchBar {
-  padding: 20px;
+.search-bar {
+  padding: 1rem;
 }
 
-.btnViewImage {
-   border: 2px solid #BAB393;
-   border-radius: 20px;
-   padding: 3px 20px;
-   font: normal 13px sans-serif; 
+.btn-submit {
+
+}
+
+.btn-view-image {
+   border: 0.1rem solid #BAB393;
+   border-radius: 1rem;
+   padding: 0.1rem 1rem;
+   margin-bottom: 0.5rem;
+   font: normal 0.8rem sans-serif; 
    background-color: white;
    color: #BAB393;
  }
- 
- .resultImage {
-   width: 100%;
+
+ .results {
+    display: flex;
+    flex-wrap: wrap;
  }
 
-.resultImageID {
-  font: normal 13px sans-serif; 
-  padding: 3px 0px 3px 0px; 
+.result-card {
+  background-color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+  border:0.1rem solid #BAB393; 
+  margin: 0.6rem 0.2rem;
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 26%;
+} 
+ 
+.result-card img {
+  max-width: 100%;
 }
 
-.resultImageTags {
-  font: normal 13px sans-serif; 
-  padding: 3px 0px 15px 0px; 
+.result-card-text-item {
+  font: normal 0.8rem sans-serif; 
+  padding: 0.1rem 0 0.1rem 0px; 
 }
- 
-.resultImageBg {
-  border-radius: 8px;
-  padding: 12.5px;
-  border:1px solid #BAB393; 
-  background-color: white;
-  margin-bottom: 20px;
-  text-align: center;
-} 

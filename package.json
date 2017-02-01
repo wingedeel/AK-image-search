@@ -19,7 +19,7 @@
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4",
-    "redux-promise": "^0.5.3",
+    "redux-promise": "^0.5.3"
   },
   "devDependencies": {
     "babel-core": "^6.2.1",
