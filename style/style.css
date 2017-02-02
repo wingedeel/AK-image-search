@@ -33,7 +33,7 @@ body {
   margin: 0.6rem 0.2rem;
   padding: 2%;
   flex-grow: 1;
-  flex-basis: 26%;
+  flex-basis: 16%;
 } 
  
 .result-card img {
@@ -41,6 +41,6 @@ body {
 }
 
 .result-card-text-item {
-  font: normal 0.8rem sans-serif; 
+  font: normal 0.7rem sans-serif; 
   padding: 0.1rem 0 0.1rem 0px; 
 }
