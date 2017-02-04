@@ -42,9 +42,7 @@ class List extends Component {
 					    			<div className="result-card-text-item">Tags: {item.tags}</div>
 					    			<button 
 					    				className="btn-view-image" 
-					    				onClick={() => this.props.selectListItem(item)}>
-					    			View
-					    			</button>
+					    				onClick={() => this.props.selectListItem(item)}>View</button>
 		           					<img src={item.webformatURL} alt={item.id} />
 	    						</div>
     						}
