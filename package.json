@@ -1,33 +1,45 @@
 {
   "name": "AK-image-search",
   "version": "1.0.0",
-  "description": "Simple Pixabay image search using React, Redux and react-motion",
+  "description": "Simple Pixabay image search using React and Redux",
   "main": "index.js",
   "repository": "https://github.com/wingedeel/AK-image-search.git",
   "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",  
     "postinstall": "webpack -p",
-    "build": "webpack",
-    "start": "webpack-dev-server --progress --inline --hot"
+    "start": "node server.js" 
   },
   "author": "Anne Kotecha",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.14.0",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-motion": "^0.4.7",
-    "react-redux": "^4.0.0",
-    "react-router": "^2.0.1",
-    "redux": "^3.0.4",
-    "redux-promise": "^0.5.3"
-  },
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.14.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.14.0",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4",
+    "redux-promise": "^0.5.3",
+    "webpack": "^1.12.9"
   }
 }
