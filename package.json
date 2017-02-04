@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",  
     "postinstall": "webpack -p",
-    "start": "webpack-dev-server --progress --inline --hot" 
+    "start": "node server.js" //"webpack-dev-server --progress --inline --hot" 
   },
   "author": "Anne Kotecha",
   "license": "ISC",
