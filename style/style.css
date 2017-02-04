@@ -22,6 +22,7 @@ body {
 
  .results {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
  }
 
@@ -44,3 +45,6 @@ body {
   font: normal 0.7rem sans-serif; 
   padding: 0.1rem 0 0.1rem 0px; 
 }
+
+/* MEDIA QUERIES */
+
