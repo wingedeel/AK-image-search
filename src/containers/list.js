@@ -33,16 +33,18 @@ class List extends Component {
 							}}>
 
 			    			{({x, opacity, scale}) => 
-				    			<div className="result-card col-xs-6 col-sm-4" key={item.id} item={item} 
+				    			<div className="result-card" key={item.id} item={item} 
 				    				style={{
 				    					border: '1px solid grey',
 				    					transform: `scale(${scale}) rotate(${x}deg)`
 				    				}}>
-					    			<div className="result-card-text-item">ID: {item.id}</div>
-					    			<div className="result-card-text-item">Tags: {item.tags}</div>
-					    			<button 
-					    				className="btn-view-image" 
-					    				onClick={() => this.props.selectListItem(item)}>View</button>
+				    				 <div className="photo-overlay">
+						    			<div className="text-item">ID: {item.id}</div>
+						    			<div className="text-item">Tags: {item.tags}</div>
+						    			<button 
+						    				className="btn-view-image" 
+						    				onClick={() => this.props.selectListItem(item)}>View</button>
+						    		</div>
 		           					<img src={item.webformatURL} alt={item.id} />
 	    						</div>
     						}

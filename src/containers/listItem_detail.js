@@ -1,9 +1,3 @@
-/*
-The BookDetail component is a 'container' because 
-its cares about the 'activeBook' element of the Application State.
-A Container is a component that is aware of the Application State.
-*/
-
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
@@ -20,11 +14,7 @@ class ListItemDetail extends Component {
 	}
 }
 
-/*
-This function converts/maps the specified chunk of Application State
-(state.activeBook) to a Prop(book) which the BookDetails React
-component can then use
-*/
+
 function mapStateToProps(state){
 	return{
 		activeItem: state.activeItem

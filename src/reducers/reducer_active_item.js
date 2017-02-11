@@ -5,7 +5,5 @@ export default function (state = null, action) {
 		case 'ITEM_SELECTED':
 			return action.payload;
 	}
-	// If we don't care about the current action
-	// just return the existing state
 	return state;
 }

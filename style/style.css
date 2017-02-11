@@ -1,6 +1,14 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
 body {
     background-color: #E6DDB8;
 }
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
 
 .search-bar {
   padding: 1rem;
@@ -32,19 +40,34 @@ body {
   border-radius: 0.5rem;
   border:0.1rem solid #BAB393; 
   margin: 0.6rem 0.2rem;
-  padding: 2%;
+  padding: 1%;
   flex-grow: 1;
-  flex-basis: 16%;
+  flex-basis: 31%;
 } 
  
 .result-card img {
   max-width: 100%;
+  border-radius: 0.3rem;
 }
 
-.result-card-text-item {
+.text-item {
   font: normal 0.7rem sans-serif; 
   padding: 0.1rem 0 0.1rem 0px; 
 }
 
-/* MEDIA QUERIES */
+/* ---- Photo Overlay ---- */
+.photo-overlay { 
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; 
+  left: 0;
+  border-radius: .4rem;
+  padding: 0.1rem 1rem;
+  background-color: rgba(0,0,0, .65);
+}
+/* ================================= 
+  Media Queries
+==================================== */
 

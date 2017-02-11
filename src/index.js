@@ -8,7 +8,6 @@ import promise from 'redux-promise';
 import App from './components/app';
 import reducers from './reducers';
 
-
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 // Use a react-redux component called <Provider> to make the store 
