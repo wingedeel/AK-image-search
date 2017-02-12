@@ -1,7 +1,6 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
 body {
     background-color: #E6DDB8;
 }
@@ -12,20 +11,18 @@ body {
 
 .search-bar {
   padding: 1rem;
-}
-
-.btn-submit {
-
+  width:50%;
 }
 
 .btn-view-image {
-   border: 0.1rem solid #BAB393;
+   border: 0.1rem solid #000;
    border-radius: 1rem;
    padding: 0.1rem 1rem;
    margin-bottom: 0.5rem;
-   font: normal 0.8rem sans-serif; 
+   font: normal 0.8rem sans-serif;
+   font-weight: 300; 
    background-color: white;
-   color: #BAB393;
+   color: #000;
  }
 
  .results {
@@ -42,7 +39,7 @@ body {
   margin: 0.6rem 0.2rem;
   padding: 1%;
   flex-grow: 1;
-  flex-basis: 31%;
+  flex-basis: 23%;
 } 
  
 .result-card img {
@@ -55,8 +52,20 @@ body {
   padding: 0.1rem 0 0.1rem 0px; 
 }
 
+.tag{
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: #E6DDB8;
+  border-radius: .5em;
+  margin: 0;
+}
 /* ---- Photo Overlay ---- */
-.photo-overlay { 
+.photo-overlay {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items:center;
   color: #fff;
   position: absolute;
   top: 0;

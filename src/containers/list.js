@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectListItem } from '../actions/index';
+import { setSearchTerm, selectListItem } from '../actions/index';
 import { Motion, spring } from 'react-motion';
 
-const ListItem = ({item}) => {
+const Tags = ( {tags, setSearchTerm} ) => {
+	const tagsArray = tags.split(',');
 	return (
-		  <div className="result-card col-xs-6 col-sm-4">         
-			<div className="result-card-text-item">ID:&nbsp;{item.id}</div>
-          	<div className="result-card-text-item">Tags Here:&nbsp;{item.tags}</div>
-            <button className="btn-view-image" onClick={() => this.props.selectListItem(item)}>
-             View Image
-            </button>
-           	<img src={item.webformatURL} alt={item.id} />
-        </div>
+		<div className="text-item">
+		{tagsArray.map(tag => {
+			return <button 
+					key={tag}
+					className="tag" 
+					onClick={() => setSearchTerm(tag)}>{tag}
+					</button>
+		})}
+		</div>
 	)
 }
 
@@ -39,8 +41,8 @@ class List extends Component {
 				    					transform: `scale(${scale}) rotate(${x}deg)`
 				    				}}>
 				    				 <div className="photo-overlay">
-						    			<div className="text-item">ID: {item.id}</div>
-						    			<div className="text-item">Tags: {item.tags}</div>
+						    			<div className="text-item">Image ID: {item.id}</div>
+						    			<Tags tags={item.tags} setSearchTerm={this.props.setSearchTerm}/>
 						    			<button 
 						    				className="btn-view-image" 
 						    				onClick={() => this.props.selectListItem(item)}>View</button>
@@ -63,6 +65,6 @@ function mapStateToProps(state){
 	};
 }
 
-export default connect ( mapStateToProps, {selectListItem}) (List);
+export default connect ( mapStateToProps, {selectListItem, setSearchTerm}) (List);
 
 
