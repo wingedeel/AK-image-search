@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
 
-import ListReducer from './reducer_list';
-import ActiveItemReducer from './reducer_active_item';
-import SearchTermReducer from './reducer_search_term';
+import ResultsReducer from './reducer-results';
+import SearchTermReducer from './reducer-search-term';
 
 const rootReducer = combineReducers({
-	items: ListReducer,
-	activeItem: ActiveItemReducer,
+	items: ResultsReducer,
 	searchTerm: SearchTermReducer
 });
 

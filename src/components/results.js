@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setSearchTerm, selectListItem } from '../actions/index';
+import { setSearchTerm, selectResult } from '../actions/index';
 import { Motion, spring } from 'react-motion';
 
 const Tags = ( {tags, setSearchTerm} ) => {
@@ -18,7 +18,7 @@ const Tags = ( {tags, setSearchTerm} ) => {
 	)
 }
 
-class List extends Component {
+class Results extends Component {
 	render() {
 		return (
 			<div className="results">
@@ -65,6 +65,6 @@ function mapStateToProps(state){
 	};
 }
 
-export default connect ( mapStateToProps, {selectListItem, setSearchTerm}) (List);
+export default connect ( mapStateToProps, {selectResult, setSearchTerm}) (Results);
 
 

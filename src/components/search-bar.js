@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { setSearchTerm, fetchSearchResults } from '../actions/index';
+import { setSearchTerm, fetchResults } from '../actions/index';
 
 class SearchBar extends Component {
 
@@ -13,7 +13,7 @@ class SearchBar extends Component {
 	
 	onFormSubmit(event){
 		event.preventDefault();
-		this.props.fetchSearchResults(this.props.searchTerm);
+		this.props.fetchResults(this.props.searchTerm);
 	}
 	
 
@@ -53,4 +53,4 @@ function mapStateToProps( state ) {
 
 // connect() will automatically bind dispatch to your actions 
 // if they are passed in as an object of function names.
-export default connect (mapStateToProps, {fetchSearchResults, setSearchTerm} )(SearchBar);
+export default connect (mapStateToProps, {fetchResults, setSearchTerm} )(SearchBar);

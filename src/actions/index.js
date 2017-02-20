@@ -9,10 +9,10 @@ export function setSearchTerm(searchTerm) {
 	return {
 		type: 'SEARCH_TERM_SELECTED',
 		payload: searchTerm
-	};
+	}
 }
 
-export function fetchSearchResults(searchTerm) {
+export function fetchResults(searchTerm) {
 
 	// e.g. https://pixabay.com/api/?key=3447327-4862a38728b3e10a8a5e52323&q=yellow+flowers&image_type=photo
 	//var searchTerm = 'yellow+flowers';
@@ -26,10 +26,10 @@ export function fetchSearchResults(searchTerm) {
 	}
 }
 
-export function selectListItem(listItem) {
+export function selectResult(resultItem) {
 	return {
 		type: 'ITEM_SELECTED',
-		payload: listItem
-	};
+		payload: resultItem
+	}
 }
 

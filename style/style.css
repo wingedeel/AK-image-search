@@ -9,22 +9,13 @@ body {
   Base Layout Styles
 ==================================== */
 
+/* ---- Search Bar ---- */
 .search-bar {
   padding: 1rem;
   width:50%;
 }
 
-.btn-view-image {
-   border: 0.1rem solid #000;
-   border-radius: 1rem;
-   padding: 0.1rem 1rem;
-   margin-bottom: 0.5rem;
-   font: normal 0.8rem sans-serif;
-   font-weight: 300; 
-   background-color: white;
-   color: #000;
- }
-
+/* ---- Results ---- */
  .results {
     display: flex;
     flex-direction: row;
@@ -60,6 +51,19 @@ body {
   border-radius: .5em;
   margin: 0;
 }
+
+.btn-view-image {
+   border: 0.1rem solid #000;
+   border-radius: 1rem;
+   padding: 0.1rem 1rem;
+   margin-bottom: 0.5rem;
+   font: normal 0.8rem sans-serif;
+   font-weight: 300; 
+   background-color: white;
+   color: #000;
+ }
+
+
 /* ---- Photo Overlay ---- */
 .photo-overlay {
   display:flex;
