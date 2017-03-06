@@ -3,6 +3,7 @@
 ==================================== */
 body {
     background-color: #E6DDB8;
+    font: normal 0.7rem sans-serif; 
 }
 
 /* ================================= 
@@ -13,16 +14,18 @@ body {
 .search-bar {
   padding: 1rem;
   width:50%;
+  font: normal 0.7rem sans-serif; 
 }
 
 /* ---- Results ---- */
  .results {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap
  }
 
 .result-card {
+  border: 1px solid grey;
   background-color: white;
   text-align: center;
   border-radius: 0.5rem;
@@ -39,16 +42,18 @@ body {
 }
 
 .text-item {
-  font: normal 0.7rem sans-serif; 
+  font: normal 0.5rem sans-serif; 
   padding: 0.1rem 0 0.1rem 0px; 
 }
 
 .tag{
   color: #000;
   font-weight: 300;
+  font: normal 0.5rem sans-serif; 
   text-decoration: none;
-  background-color: #E6DDB8;
+  background-color: transparent;
   border-radius: .5em;
+  border:1px solid grey;
   margin: 0;
 }
 

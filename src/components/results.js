@@ -18,39 +18,40 @@ const Tags = ( {tags, setSearchTerm} ) => {
 	)
 }
 
+const ResultCard = ( {item, setSearchTerm, style} ) => { 
+	return(
+		<div className="result-card" key={item.id} item={item} style={style}>
+			<img src={item.webformatURL} alt={item.id} />
+				<Tags tags={item.tags} setSearchTerm={setSearchTerm}/>
+		</div>
+	)
+}
+
 class Results extends Component {
+
 	render() {
-		return (
-			<div className="results">
-				{this.props.items.map( (item,index) => {
-					const rotateEnd = index % 2 === 0 ? 360 : -360;
-					return  (
-						<Motion 
-							key={item.id} 
-							defaultStyle={{x:0, opacity:0, scale:0}} 
-							style={{
-								x: spring(rotateEnd,[1,1]), 
+		const {items, setSearchTerm} = this.props
+		
+		const styleDefault = {x:0, opacity:0, scale:0}
+		const styleEnd = {
+								x: spring(360,[1,1]), 
 								opacity:spring(1,[1,1]), 
 								scale:spring(1, [1,1])
-							}}>
-
-			    			{({x, opacity, scale}) => 
-				    			<div className="result-card" key={item.id} item={item} 
-				    				style={{
-				    					border: '1px solid grey',
-				    					transform: `scale(${scale}) rotate(${x}deg)`
-				    				}}>
-				    				 <div className="photo-overlay">
-						    			<div className="text-item">Image ID: {item.id}</div>
-						    			<Tags tags={item.tags} setSearchTerm={this.props.setSearchTerm}/>
-						    			<button 
-						    				className="btn-view-image" 
-						    				onClick={() => this.props.selectListItem(item)}>View</button>
-						    		</div>
-		           					<img src={item.webformatURL} alt={item.id} />
-	    						</div>
-    						}
-    					</Motion>
+							}
+		return (
+			
+			<div className="results">
+				{items.map( (item,index) => {
+					return  (
+						<Motion key={item.id} defaultStyle={styleDefault} style={styleEnd}>
+						{({x, opacity, scale}) => 
+							
+							<ResultCard 
+							item={item} 
+							setSearchTerm={setSearchTerm}
+							style={{transform: `scale(${scale}) rotate(${x}deg)`}}/>
+						}
+						</Motion>
 					)
 				})}	
 			</div>

@@ -33,8 +33,8 @@ class SearchBar extends Component {
 						className="form-control"
 						value={this.props.searchTerm}
 						onChange={this.onInputChange}/>
-					<span className="input-group-btn">
-						<button type="submit" className="btn btn-secondary">Submit</button>
+					<span>
+						<button type="submit">Submit</button>
 					</span>
 				</form>
 			</div>
