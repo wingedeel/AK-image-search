@@ -1,28 +1,44 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+
 body {
-    background-color: #E6DDB8;
-    font: normal 0.7rem sans-serif; 
+    background-color:   #faebd7;
+    font: normal 2rem sans-serif; 
 }
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
+/* ---- Header ---- */
+.header {
+  padding: 1em;
+  background: #cfcfcf;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 /* ---- Search Bar ---- */
+
 .search-bar {
-  padding: 1rem;
-  width:50%;
-  font: normal 0.7rem sans-serif; 
+  font: normal 1.2rem sans-serif; 
 }
 
 /* ---- Results ---- */
+
  .results {
+  column-count: 3;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap
  }
+
+/* masonry grid layout
+.results {
+  column-count: 3;
+ }
+*/
 
 .result-card {
   border: 1px solid grey;
@@ -49,11 +65,10 @@ body {
 .tag{
   color: #000;
   font-weight: 300;
-  font: normal 0.5rem sans-serif; 
+  font: normal 1.2rem sans-serif; 
   text-decoration: none;
   background-color: transparent;
-  border-radius: .5em;
-  border:1px solid grey;
+  border:1px solid black;
   margin: 0;
 }
 

@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Results from './Results';
+import SearchBar from './SearchBar';
 
-import Results from './results';
-import SearchBar from './search-bar';
-
-export default class App extends Component {
-  render() {
+const App = () => {
     return (
     	<div>
-    		<SearchBar />
+    	<header className="header">
+				<h4>Pixabay Image Search</h4>
+				<h6>using React, Redux and react-motion</h6>
+				<SearchBar />
+		</header>
+    		
+    		
       		<Results />
       	</div>
-    );
-  }
+    )
 }
+
+export default App
+

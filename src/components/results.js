@@ -1,33 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { setSearchTerm, selectResult } from '../actions/index';
 import { Motion, spring } from 'react-motion';
+import ResultCard from './ResultCard';
 
-const Tags = ( {tags, setSearchTerm} ) => {
-	const tagsArray = tags.split(',');
-	return (
-		<div className="text-item">
-		{tagsArray.map(tag => {
-			return <button 
-					key={tag}
-					className="tag" 
-					onClick={() => setSearchTerm(tag)}>{tag}
-					</button>
-		})}
-		</div>
-	)
-}
-
-const ResultCard = ( {item, setSearchTerm, style} ) => { 
-	return(
-		<div className="result-card" key={item.id} item={item} style={style}>
-			<img src={item.webformatURL} alt={item.id} />
-				<Tags tags={item.tags} setSearchTerm={setSearchTerm}/>
-		</div>
-	)
-}
-
-class Results extends Component {
+class Results extends React.Component {
 
 	render() {
 		const {items, setSearchTerm} = this.props
@@ -59,7 +36,7 @@ class Results extends Component {
 	}
 }
 
-function mapStateToProps(state){
+const mapStateToProps = (state) => {
 	return { 
 		items: state.items.all ,
 		searchTerm: state.searchTerm

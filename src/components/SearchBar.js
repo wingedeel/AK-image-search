@@ -24,17 +24,14 @@ class SearchBar extends Component {
 
 	render() {
 		return (
-			<div className="search-bar">
-				<h4>Pixabay Image Search</h4>
-				<h6>using React, Redux and react-motion</h6>
-				<form onSubmit={this.onFormSubmit} className="input-group">
-					<input
-						placeholder="Please enter a search term"
-						className="form-control"
+			<div>
+				<form onSubmit={this.onFormSubmit}>
+					<input className="search-bar"
+						placeholder="Enter search term here"
 						value={this.props.searchTerm}
 						onChange={this.onInputChange}/>
 					<span>
-						<button type="submit">Submit</button>
+						<button className="search-bar" type="submit">Submit</button>
 					</span>
 				</form>
 			</div>
