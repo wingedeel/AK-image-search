@@ -5,14 +5,12 @@ import SearchBar from './SearchBar';
 const App = () => {
     return (
     	<div>
-    	<header className="header">
-				<h4>Pixabay Image Search</h4>
-				<h6>using React, Redux and react-motion</h6>
-				<SearchBar />
-		</header>
-    		
-    		
-      		<Results />
+      	<header className="header">
+  				<h4>Pixabay Image Search</h4>
+  				<h6>using React, Redux and react-motion</h6>
+  				<SearchBar />
+  		  </header>
+      	<Results />
       	</div>
     )
 }

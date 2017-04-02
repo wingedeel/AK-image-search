@@ -41,8 +41,6 @@ body {
 */
 
 .result-card {
-  border: 1px solid grey;
-  background-color: white;
   text-align: center;
   border-radius: 0.5rem;
   border:0.1rem solid #BAB393; 
@@ -50,8 +48,9 @@ body {
   padding: 1%;
   flex-grow: 1;
   flex-basis: 23%;
-} 
- 
+  background-color: white;
+}  
+
 .result-card img {
   max-width: 100%;
   border-radius: 0.3rem;

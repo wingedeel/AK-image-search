@@ -1,3 +1,7 @@
+/*
+Specified in Stephen Grider video Lecture 109
+https://www.udemy.com/react-redux/learn/v4/t/lecture/5691864?start=0
+*/
 const express = require('express');
 const path = require('path');
 const port = process.env.PORT || 8080;
