@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setSearchTerm, selectResult } from '../actions/index';
 import { Motion, spring } from 'react-motion';
-import ResultCard from './ResultCard';
+import ResultCard from './resultCard';
 
 class Results extends React.Component {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import ResultTags from './ResultTags';
+import ResultTags from './resultTags';
 
 const ResultCard = ( {item, setSearchTerm, style} ) => { 
 	return(
