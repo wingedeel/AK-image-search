@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "postinstall": "webpack -p",
-    "heroku-start": "node server.js",
-    "start": "webpack-dev-server --progress --inline --hot"
+    "start": "node server.js",
+    "dev-start": "webpack-dev-server --progress --inline --hot"
   },
   "author": "Anne Kotecha",
   "license": "ISC",
