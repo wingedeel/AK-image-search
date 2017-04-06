@@ -21,7 +21,6 @@ class SearchBar extends React.Component {
 		this.props.setSearchTerm(event.target.value);
 	}
 
-
 	render() {
 		return (
 			<div>

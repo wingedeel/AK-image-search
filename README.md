@@ -15,4 +15,4 @@ A simple image search app using React and Redux, linking to the Pixabay API.
 
 # Demo
 
-    https://ak-image-search.herokuapp.com/
+   [https://ak-image-search.herokuapp.com/]
